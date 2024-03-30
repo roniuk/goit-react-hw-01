@@ -1,19 +1,21 @@
-export default function Profile({
-  user: {
-    username,
+import css from './Profile.module.css';
+
+export default function Profile(
+   {
+    name,
     tag,
     location,
-    avatar,
+    image,
     stats
-  },
-}) {
+  }
+) {
   return (
     <div>
       <div>
-        <img src={avatar} alt="User avatar" />
-        <h1>{username}</h1>
-        <p>{tag}</p>
-        <p>{location}</p>
+        <img src={image} alt="User avatar" />
+        <h1 className={css.user}>{name}</h1>
+        <p className={css.tag}>@{tag}</p>
+        <p className={css.location}>{location}</p>
       </div>
       <ul>
         <li>
@@ -32,4 +34,3 @@ export default function Profile({
     </div>
   );
 }
-
