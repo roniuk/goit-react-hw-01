@@ -1,0 +1,39 @@
+/* TransactionHistory.module.css */
+
+.history {
+    width: 100%;
+    /* border-collapse: collapse; */
+    margin-top: 20px;
+    margin-bottom: 60px;
+    border: 2px solid black;;
+    margin-left: 20px;
+}
+
+.headerRow {
+    background-color:  rgb(211, 211, 211);
+    border: 2px solid black;
+    color: #fff;
+    font-weight: bold;
+}
+
+.headerRow th {
+    padding: 10px;
+    text-align: left;
+}
+
+.dataRow td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.type {
+     color: #0e0d0d;
+}
+
+.amount {
+    color: #0e0d0d;
+}
+
+.currency {
+     color: #0e0d0d;
+}
